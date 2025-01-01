@@ -3,7 +3,8 @@ import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 
 const BlogUpdate = () => {
-  const { id } = useParams(); // Get the blog ID from the URL
+  const { id } = useParams();
+  console.log(id) // Get the blog ID from the URL
   const navigate = useNavigate();
 
   const [blog, setBlog] = useState({
@@ -16,9 +17,10 @@ const BlogUpdate = () => {
 
   // Fetch the existing blog details
   useEffect(() => {
-    axios.get(`http://localhost:8080/blog/getblog/${id}`, { withCredentials: true })
+    axios.get(`http://localhost:8080/blog/getSingleBlog/${id}`, { withCredentials: true })
       .then((response) => {
-        setBlog(response.data.blog);
+        console.log(response)
+        setBlog(response.data);
       })
       .catch((error) => {
         console.error('Error fetching blog details:', error);
