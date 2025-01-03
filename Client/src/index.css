@@ -1,0 +1,104 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #343a40;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  /* Card Styles */
+  .card {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #5f6163;
+  }
+  
+  .card-subtitle {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #6c757d;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #495057;
+    margin-bottom: 15px;
+  }
+  
+  /* Button Styles */
+  .btn {
+    font-size: 0.875rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  
+  .btn-primary {
+    background-color: #323233;
+    border: none;
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #323233;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    border: none;
+    color: #fff;
+  }
+  
+  .btn-danger:hover {
+    background-color: #b21f2d;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .card {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    .btn {
+      font-size: 0.8rem;
+      padding: 8px 12px;
+    }
+  }
+  
+
+  
